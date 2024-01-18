@@ -3,8 +3,8 @@ import "./App.css";
 
 function App() {
   const [length, setLength] = useState(8);
-  const [number, setNumber] = useState(false);
-  const [character, setCharacter] = useState(false);
+  const [number] = useState(false);
+  const [character] = useState(false);
   const [password, setPassword] = useState("");
 
   // useRef hook
