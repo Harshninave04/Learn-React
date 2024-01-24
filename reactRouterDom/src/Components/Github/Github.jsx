@@ -14,10 +14,13 @@ function Github() {
 
   return (
     <>
-      <div className="bg-gray-400 text-3xl text-black font-bold p-10 flex justify-center items-center">
+      <img src={data.avatar_url} alt="" width={300} className="rounded-lg mx-auto m-10" />
+
+      <div className="text-3xl text-black font-bold p-1 flex justify-center items-center">
         Github followers: {data.followers}
       </div>
-      <div className="bg-gray-400 text-3xl text-black font-bold p-1 flex justify-center items-center">
+
+      <div className=" text-3xl text-black font-bold p-1 flex justify-center items-center mb-8">
         Github following: {data.following}
       </div>
     </>
