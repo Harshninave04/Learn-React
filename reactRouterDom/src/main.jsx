@@ -4,6 +4,7 @@ import Layout from "./Layout.jsx";
 import Home from "./Components/Home/Home.jsx";
 import About from "./Components/About/About.jsx";
 import "./index.css";
+import ResumePage from "./Components/ResumePage/ResumePage.jsx";
 import {
   Route,
   RouterProvider,
@@ -12,8 +13,6 @@ import {
 } from "react-router-dom";
 import Contact from "./Components/Contact/Contact.jsx";
 import Github from "./Components/Github/Github.jsx";
-
-
 // This is the first method of routing
 
 // const router = createBrowserRouter([
@@ -46,6 +45,7 @@ const router = createBrowserRouter(
       <Route path="about" element={<About />} />
       <Route path="contact" element={<Contact />} />
       <Route path="github" element={<Github />} />
+      <Route path="/resume" element={<ResumePage />} />
     </Route>
   )
 );
